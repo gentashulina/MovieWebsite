@@ -12,7 +12,7 @@
     <section>
         <nav>
             <div class="logo">
-                <h1>Movies<span>Website</span></h1>
+                <h1>Movie<span>Mingle</span></h1>
             </div>
             <div class="right">
         <ul>
@@ -25,13 +25,15 @@
         </ul>
             </div>
         </nav>
+        
+        
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
 
                <div class="image">
                 <div class="black">
-                    <h1>Annabelle</h1>
+                    <h1>Spider-Man 3</h1>
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -46,7 +48,7 @@
                          Exercitationem repudiandae praesentium qui?
                     </p>
                     <div class="genre">
-                        <a href="#" class="category">Horror</a>
+                        <a href="#" class="category">Adventure/Action</a>
                        
 
                     </div>
@@ -54,9 +56,15 @@
                         <i class="fa-solid fa-play"></i>
                         <p>Watch the trailer</p>
                          </div>
+                        
 
                 </div>
-                <img src="images/annabelle3.jpg">
+                <img src="images/images6.jpg">
+                
+                 
+                
+
+               
                </div>
               </div>
 
@@ -286,6 +294,7 @@
                         <i class="fa-solid fa-play"></i>
                         </div>
                     </div>
+                    
 
                     <img src="images/insidious.jpg">
 
@@ -395,6 +404,7 @@
 
                     <img src="images/blackAdam.jpg">
 
+                    
                 </div>
 
 
@@ -789,33 +799,102 @@
 
 
 
+    <div class="trailer">
+        <div class="movies_box">
+            <h1>Movies Trailers</h1> 
+            <div class="box">
+                
+                <div>
+                    <p>Black Adam</p>
+                    <video width="500px" controls autoplay muted loop >
+                        <source src="video/Black Adam - Official Trailer 2.mp4" type="video/mp4">
+                        <source src="video/Black Adam - Official Trailer 2.webm" type="video/webm">
+                    </video>
+                </div>
 
+               
+                
 
+               
+            
+                <div>
+                    
+                    <p1>Insidious</p1>
+                    <video width="500px" controls autoplay muted loop >
+                        <source src="video/Insidious Trailer (Official) - James Wan (2010)-(480p).mp4" type="video/mp4">
+                        <source src="video/Insidious Trailer (Official) - James Wan (2010)-(480p).webm" type="video/webm">
+                    </video>
+                </div>
+                              
+                <div>
+                    <p2>Rapunzel</p2>
+                    <video width="500px" controls autoplay muted loop >
+                        <source src="video/RAPUNZEL -  Offizieller Trailer (deutsch-german) _ Disney HD.mp4" type="video/mp4">
+                        <source src="video/RAPUNZEL -  Offizieller Trailer (deutsch-german) _ Disney HD.webm" type="video/webm">
+                    </video>
 
-    <div class="newsletter">
-        <h1>Newsletter</h1>
-        <div class="news_card">
-            <input type="email" name="" id="" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
+                </div>
+                          
+            
+                                    
+                        
+                                          
+                                        
+
+                                       
+                                  
+                        
+                          
+                                  
+                                   
+                        
+
+            </div>
+
         </div>
+
+    </div>
+
+
+
+
+
+
+
+   
 
     </div>
       
 
 
 
-
-    <p class="end">Design By<span><i class="fa-solid fa-face-grin-wide"></i>Genta Shulina</span></p>
-
+    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    /*var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });*/
+
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

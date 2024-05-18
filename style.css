@@ -26,7 +26,7 @@ section nav .logo h1{
 }
 
 section nav .logo h1 span{
-    color: rgb(62, 24, 98);
+    color: rgb(184, 151, 214);
     margin-left: 8px;
     text-decoration: underline;
 }
@@ -96,7 +96,7 @@ section nav .right ul li a:hover{
    }
 
    .swiper-slide .image .black p{
-    width: 550px;
+    width: 300px;
     text-align: justify;
     font-size: 16px;
     color: #cccccc;
@@ -693,64 +693,201 @@ section nav .right ul li a:hover{
     object-fit: cover;
     object-position: center;
 }
+/*---------------*/
 
-.newsletter{
-    width: 100%;
-    height: auto;
-    padding: 0 0 40px 0;
+.trailer{
+width: 100%;
+height: auto;
+margin: 0 auto;
+padding-bottom: 25px;
 background-color: #171717;
 }
 
-.newsletter h1{
-    text-align: center;
-    color: yellow;
+.trailer .movies_box{
+width: 95%;
+margin: 0 auto;
 }
 
-.newsletter .news_card{
-    width: 550px;
-    margin: 0 auto;
+.trailer .movies_box h1{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.trailer .movies_box p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.trailer .movies_box p1{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.trailer .movies_box p2{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.trailer .movies_box .box{
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
 }
 
-.newsletter .news_card input{
-    width: 550px;
-    height: 55px;
-    margin-top: 20px;
-    border-radius: 35px;
-    border: 3px solid yellow;
-    padding: 0 10px;
-    outline: none;
-    background: none;
-    color: #cccccc;
+.trailer .movies_box .box .card{
+    width: 250px;
+    height: 370px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
 }
-.newsletter .news_card button{
+
+.trailer .movies_box .box .card .details{
+    width: 250px;
+    height: 370px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 8px;
+    transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+.trailer .movies_box .box .card:hover .details{
+    opacity: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.0),rgba(0,0,0,0.7));
+}
+
+.trailer .movies_box .box .card .details .left{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transform: translate(-100px);
+    transition: 0.4s;
+    opacity: 0;
+}
+.trailer .movies_box .box .card:hover .details .left{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.trailer .movies_box .box .card .details .left p.name{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+  
+
+.trailer .movies_box .box .card .details .left .date_quality{
+    display: flex;
+    align-items: center;
+}
+
+.trailer .movies_box .box .card .details .left .date_quality p.quality{
+    width: 30px;
+    font-size: 13px;
+    background: yellow;
+    color: #282931;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+  
+.trailer .movies_box .box .card .details .left .date_quality p.date{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+.trailer .movies_box .box .card .details .left p.category{
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.trailer .movies_box .box .card .details .left .info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trailer .movies_box .box .card .details .left .info .rate{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.trailer .movies_box .box .card .details .left .info .rate i{
+    font-size: 12px;
+    color: yellow;
+    margin-right: 5px;
+}
+
+.trailer .movies_box .box .card .details .left .info .rate p{
+    font-size: 12px;
+}
+
+.trailer .movies_box .box .card .details .left .info .time{
+    display: flex;
+    align-items: center;
+}
+
+.trailer .movies_box .box .card .details .left .info .time i{
+    font-size: 12px;
+    color: yellow;
+    margin-left: 5px;
+}
+
+.trailer .movies_box .box .card .details .left .info .time p{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.trailer .movies_box .box .card .details .right{
     position: absolute;
     right: 0;
-    width: 100px;
-    height: 45px;
-    border-radius: 25px;
-    margin-top: 20px;
-    margin-right: 8px;
-    border: 0;
-    outline: none;
-    background-color: yellow;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
+    bottom: 0;
+    color: #fff;
+    transform: translate(100px);
+    transition: 0.4s;
+    opacity: 0;
 }
 
-p.end{
-    background: #171717;
+.trailer .movies_box .box .card:hover .details .right{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.trailer .movies_box .box .card .details .right i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
     text-align: center;
-    color: #cccccc;
-    padding: 15px 0;
+    background-color: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #282931;
+    margin: 0 10px 8px 0;  
 }
-p.end span{
-    color: yellow;
-}
-p.end span i{
-    margin: 0 8px;
-}
+  
+.trailer .movies_box .box .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} 
+ .trailer .movies_box .box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+} 
+ 
